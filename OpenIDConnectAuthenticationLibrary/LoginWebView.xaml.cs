@@ -78,7 +78,7 @@ namespace Thinktecture.Samples
                 scope,
                 "oob://localhost/wpfclient",
                 "state",
-                additional);
+                additionalValues:additional);
 
 
             this.Show();
