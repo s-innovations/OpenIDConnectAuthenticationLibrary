@@ -16,7 +16,7 @@ namespace TestConsole_for_Authentication_Library
         {
             //,"data.read data.write sub.read", "token"
 
-            var authContext = new OpenIDConnectContext("*", "*", "oob://localhost/wpfclient");
+            var authContext = new OpenIDConnectContext("https://identity-staging.cloudapp.net/connect/authorize", "E86088EB-8DAF-40D1-9937-14D05149E525", "oob://localhost/wpfclient");
 
             var result = authContext.RequestTokenAsync("data.read data.write sub.read", "token");
 
